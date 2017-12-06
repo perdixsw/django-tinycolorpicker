@@ -1,6 +1,9 @@
 # django-tinycolorpicker
 Django Field and Widget implementation of [wieringen/tinycolorpicker](https://github.com/wieringen/tinycolorpicker)
 
+## Installation
+django-tinycolorpicker is available on pypi here: https://pypi.python.org/pypi/django-tinycolorpicker
+It also must be added to `INSTALLED_APPS` so that its static files will be collected.
 
 ## Usage
 
