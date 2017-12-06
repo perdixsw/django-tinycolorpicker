@@ -10,7 +10,7 @@ setup(
 	version=version,
 	license='MIT',
 	url='https://www.github.com/perdixsw/django-tinycolorpicker',
-	download_url='https://www.github.com/perdixsw/django-tinycolorpicker/tarball/master',
+	download_url='https://www.github.com/perdixsw/django-tinycolorpicker/archive/%s.tar.gz' % version,
 	author='Perdix Software',
 	author_email='ssmith@perdixsw.com',
 	description='Django Field and Widget implementation of wieringen/tinycolorpicker',
