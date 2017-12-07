@@ -8,10 +8,13 @@
 	{% if widget.variant == 'jquery' %}
 		$(document).ready(function(){
 			$("{{ widget.name|slugify }}__colorPicker").tinycolorpicker();
+			var picker = $("{{ widget.name|slugify }}__colorPicker").data("plugin_tinycolorpicker");
+			{% if widget.value != None %}picker.setColor("{{ widget.value }}");{% endif %}
 		});
 	{% elif widget.variant == 'vanilla' %}
 		window.onload = function(){
-			tinycolorpicker(document.getElementById("{{ widget.name|slugify }}__colorPicker"));
+			var picker = tinycolorpicker(document.getElementById("{{ widget.name|slugify }}__colorPicker"));
+			{% if widget.value != None %}picker.setColor("{{ widget.value }}");{% endif %}
 		}
 	{% endif %}
 </script>
